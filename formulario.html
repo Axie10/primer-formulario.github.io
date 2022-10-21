@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaWebManuFormulario</title>
+
+    <style>
+        .cuadritos{
+
+            border-color: rgb(17, 212, 212);
+            background-color: rgb(145, 211, 241);
+            width: 6cm;
+        }
+
+    </style>
+
+    <link rel="shortcut icon" href="imagenes/avatar bueno.png" />
+    
+</head>
+<body style="background-color: rgb(153, 255, 221);">
+    
+    <h1 style="font-family:'Courier New', Courier, monospace">EJERCICIO DE PRÁCTICA PARA FORMULARIO</h1>
+
+    <p>Vamos a desarrollar un formulario para la asignatura de Lenguajes de Programación del FP Desarrollo de Aplicaciones Web.</p>
+    <p>Trabajo realizado por el alumnno <strong style="font-size: 20px">José Manuel Mosquete Abreu.</strong></p>
+
+    <p>Los formularios son un tipo de etiqueta que se utiliza para la interacción entre el usuario y la página web. Su principal función es tomar información del usuario para despues alojarla en la base de datos que tenga dicha página web.</p>
+
+    <p>Puede servir para hacer un registro nuevo de usuario, o simplemente para validar un cliente y redireccionarle a la pagina principal con todas las opciones de dicha página web.</p>
+
+    <img src="" alt="">
+
+    <fieldset style="border-color: blue ; width: 14cm; margin-left: 10%; ">
+
+        <legend><em>Registro de usuario</em></legend>
+
+
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+
+            <ul>
+
+                <li>   
+                    <label for="">Nombre:</label>
+                    <br>
+                    
+                    <input class="cuadritos" type="text" name="nombre" placeholder="Introduzca su nombre" required>
+                    
+                </li>   
+
+                <br>               
+
+                <li>   
+                    <label for="">Contraseña:</label>
+                    <br>
+                    <input class="cuadritos" type="password" name="contraseña" placeholder="Escriba su contraseña" required>
+                    
+                </li>
+                <br>
+
+                <li>   
+                    <label for="">Mail:</label>
+                    <br>
+                    <input class="cuadritos" type="email" name="correo" placeholder="Escriba su dirección mail">
+                    
+                </li>
+                <br>
+                <li>   
+                    <label for="">Número teléfono:</label>
+                    <br>
+                    <input class="cuadritos" type="number" name="correo" placeholder="Nº de teléfono">
+                    
+                </li>
+                <br>
+
+                <li>   
+                    <label for="">Fecha de nacimiento:</label>
+                    <br>
+                    <input class="cuadritos" type="date" name="correo">
+                    
+                </li>
+                <br>
+
+                <li>   
+                    <label for="">Lugar de residencia:</label>
+                    <br>
+                    <select name="" id="">
+                        <option value="">Ciudad</option>
+                        <option value="">Cáceres</option>
+                        <option value="">Badajoz</option>
+                        <option value="">Mérida</option>
+                        <option value="">Don Benito</option>
+                        <option value="">Trujillo</option>
+                        <option value="">Zafra</option>
+                    </select>
+
+                </li>    
+                <br>
+                
+                <li>  
+                    <label for="">Género:</label>
+                
+                    <input style="margin-left: 2cm" type="radio" name="Género" value="hombre">Hombre
+                    <input style="margin-left: 2cm" type="radio" name="Género" value="mujer">Mujer
+                    <input style="margin-left: 2cm" type="radio" name="Género" value="otro">Otro
+                    <br>                    
+                </li> 
+            
+                <br>
+                
+                <li><p>  
+                    <label for="">Desea recibir información al correo:</label>
+                    
+                    
+                    <input type="radio" name="notificaciones" value="si notificaciones" style="margin-left: 1cm">Sí
+                    
+                    <input type="radio" name="notificaciones" value="no notificaciones" style="margin-left: 1cm">Nunca
+                    <br>
+                </p></li> 
+                <br>
+                <input style="margin-left: 3cm" type="submit" name="enviardatos" value="Enviar datos de usuario"> 
+                <input type="reset" value="borrar">
+
+            </ul>
+
+
+        </form>
+    </fieldset>
+    <br>
+
+    <fieldset style="border-color: blue ; width: 14cm; margin-left: 10%;">
+
+        <legend><em>Comentario</em></legend>
+        <li>
+        <label for=" style="margin-left: 4cm">Si le ha surgido algun problema a la hora de registrarse no dude en contactar con nosotros</label>
+            <br>
+            <br>
+            <textarea style="height: 3cm ; width: 8cm ; margin-left: 2.5cm;"></textarea>
+            <br>
+
+            
+
+            <input type="submit" value="Enviar comentario" style="margin-left: 5.2cm ">
+        </li>
+
+    </fieldset>
+
+
+
+</body>
+</html>
